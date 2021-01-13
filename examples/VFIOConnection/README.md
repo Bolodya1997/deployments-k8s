@@ -42,10 +42,10 @@ kubectl apply -k .
 
 Wait for applications ready:
 ```bash
-kubectl -n ${NAMESPACE} wait --for=condition=ready --timeout=1m pod -l app=nsc
+kubectl -n ${NAMESPACE} wait --for=condition=ready --timeout=2m pod -l app=nsc
 ```
 ```bash
-kubectl -n ${NAMESPACE} wait --for=condition=ready --timeout=1m pod -l app=nse
+kubectl -n ${NAMESPACE} wait --for=condition=ready --timeout=2m pod -l app=nse
 ```
 
 Get NSC pod:
